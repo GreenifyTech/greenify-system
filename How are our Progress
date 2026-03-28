@@ -1,0 +1,145 @@
+يا شباب 👇 خلينا نشتغل بشكل منظم عشان نخلص المشروع بشكل احترافي ومن غير لخبطة
+
+📌 **أول حاجة: فهم النظام بتاعنا**
+
+إحنا شغالين بـ system فيه:
+
+* main → ده النسخة النهائية (محدش يلمسه)
+* develop → ده اللي بيتجمع فيه الشغل كله
+* frontend-dev → شغل الفرونت
+* backend-dev → شغل الباك
+
+---
+
+## 🚫 قواعد مهمة جدًا:
+
+* ممنوع الشغل على main نهائي
+* ممنوع تعمل push مباشر على develop
+* كل حاجة لازم تبقى عن طريق branch + pull request
+
+---
+
+# 🟢 أول مرة بس (كل واحد يعملها)
+
+افتح التيرمنال واكتب:
+
+```
+git clone (repo link)
+cd greenify-system
+```
+
+بعدها:
+
+```
+git checkout develop
+git pull origin develop
+```
+
+---
+
+# 🎨 الفرونت (خالد + محمود)
+
+## كل مرة تبدأ شغل:
+
+1. اسحب آخر نسخة:
+
+```
+git checkout frontend-dev
+git pull origin frontend-dev
+```
+
+2. اعمل branch جديد:
+
+```
+git checkout -b feature/frontend-login
+```
+
+(غير الاسم حسب التاسك)
+
+3. اشتغل عادي 💻
+
+4. لما تخلص:
+
+```
+git add .
+git commit -m "Add login page UI"
+git push origin feature/frontend-login
+```
+
+5. ادخل GitHub واعمل:
+   👉 Pull Request
+   من `feature/...` → `frontend-dev`
+
+---
+
+# ⚙️ الباك (يوسف + هشام)
+
+نفس الخطوات بس على:
+
+```
+backend-dev
+```
+
+مثال:
+
+```
+git checkout -b feature/backend-auth
+```
+
+---
+
+# 🔁 بعد ما تخلصوا شغل
+
+* كل feature يتعمله Pull Request
+* حد من التيم يراجعه
+* نعمل Merge
+
+---
+
+# 🔄 الدمج الكبير (كل شوية)
+
+أنا هعمل:
+
+* merge من frontend-dev → develop
+* merge من backend-dev → develop
+
+ولما كله يبقى تمام:
+👉 develop → main
+
+---
+
+# 📊 التاسكات (مهمة جدًا)
+
+كل واحد يختار task ويشتغل عليها:
+
+### 🎨 Frontend:
+
+* Login Page
+* Home Page
+* Product Page
+
+### ⚙️ Backend:
+
+* Auth API
+* Database
+* Orders System
+
+---
+
+# 🧠 نصايح عشان متتلغبطش
+
+* اشتغل على حاجة واحدة بس كل مرة
+* سمي الـ branch باسم واضح
+* اعمل commit كل شوية مش مرة واحدة
+* لو وقفت في حاجة اسأل فورًا
+
+---
+
+# 🔥 الهدف
+
+نشتغل كأننا team في شركة مش مشروع جامعة
+كل حاجة منظمة، واضحة، ومفيش تضارب
+
+---
+
+أي حد مش فاهم خطوة يقول فورًا ❤️
